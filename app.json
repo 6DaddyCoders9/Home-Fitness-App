@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "Gym-Fitness-App",
-    "slug": "Gym-Fitness-App",
-    "scheme": "Gym-Fitness-App",
+    "name": "Home-Fitness-App",
+    "slug": "Home-Fitness-App",
+    "scheme": "Home-Fitness-App",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
