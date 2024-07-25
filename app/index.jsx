@@ -13,7 +13,7 @@ export default function App() {
   if (!isLoading && isLogged) return <Redirect href="/home" />;
 
   return (
-    <SafeAreaView className="bg-primary h-full">
+    <SafeAreaView className="bg-white h-full">
       <ScrollView contentContainerStyle={{ height: "100%" }}>
         <View className="w-full flex justify-center items-center h-full px-4">
           <Image
@@ -21,15 +21,16 @@ export default function App() {
             className="w-[260px] h-[168px]"
             resizeMode="contain"
           />
+
           <View className="relative mt-5">
-            <Text className="text-3xl text-white font-bold text-center">
-              Get muscular at home with{" "}
-              <Text className="text-secondary-200">Home Fitness App</Text>
+            <Text className="text-3xl text-black-200 font-bold text-center">
+              Discover your local gym with{" "}
+              <Text className="text-sky-500">Gym Fitness App</Text>
             </Text>
           </View>
 
-          <Text className="text-sm font-pregular text-gray-100 mt-7 text-center">
-            Can't go to the gym? No problem we've got you!
+          <Text className="text-sm font-pregular text-gray-800 mt-7 text-center">
+            Get Fit and grow muscles!
           </Text>
 
           <CustomButton

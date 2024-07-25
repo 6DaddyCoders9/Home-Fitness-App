@@ -13,8 +13,8 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/6DaddyCoders9/Home-Fitness-App.git
-cd Home-Fitness-App
+git clone https://github.com/6DaddyCoders9/Gym-Fitness-App.git
+cd Gym-Fitness-App
 ```
 
 **Installation**
