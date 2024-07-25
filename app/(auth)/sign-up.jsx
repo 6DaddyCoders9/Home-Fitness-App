@@ -38,16 +38,16 @@ const SignUp = () => {
     }
   };
   return (
-    <SafeAreaView className="bg-primary h-full">
+    <SafeAreaView className="bg-white h-full">
       <ScrollView>
         <View className="w-full flex justify-center min-h-[83vh] px-4 my-6">
           <Image
             source={images.logo}
             resizeMode="contain"
-            className="w-[200px] -left-5"
+            className="w-[150px] -mb-60 -top-20"
           />
 
-          <Text className="text-2xl font-semibold text-white mt-10 font-psemibold">
+          <Text className="text-2xl font-semibold text-black mt-10 font-psemibold">
             Sign Up
           </Text>
 
@@ -80,12 +80,12 @@ const SignUp = () => {
           />
 
           <View className="flex justify-center pt-5 flex-row gap-2">
-            <Text className="text-lg text-gray-100 font-pregular">
+            <Text className="text-lg text-black-100 font-pregular">
               Already have an account?
             </Text>
             <Link
               href="/sign-in"
-              className="text-lg font-psemibold text-secondary"
+              className="text-lg font-psemibold text-sky-500"
             >
               Sign In
             </Link>

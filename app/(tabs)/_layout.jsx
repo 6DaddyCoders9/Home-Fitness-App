@@ -1,7 +1,7 @@
 import { View, Text, Image } from "react-native";
 import { Tabs, Redirect } from "expo-router";
 
-import { icons } from "../../constants";
+import { icons, images } from "../../constants";
 
 const TabIcon = ({ icon, color, name, focused }) => {
   return (
@@ -28,12 +28,12 @@ const TabsLayout = () => {
       <Tabs
         screenOptions={{
           tabBarShowLabel: false,
-          tabBarActiveTintColor: "#FFA001",
-          tabBarInactiveTintColor: "#CDCDE0",
+          tabBarActiveTintColor: "#00adf5",
+          tabBarInactiveTintColor: "#000",
           tabBarStyle: {
-            backgroundColor: "#161622",
+            backgroundColor: "#fff",
             borderTopWidth: 1,
-            borderTopColor: "#232533",
+            borderTopColor: "#fff",
             height: 84,
           },
         }}
@@ -45,9 +45,24 @@ const TabsLayout = () => {
             headerShown: false,
             tabBarIcon: ({ color, focused }) => (
               <TabIcon
-                icon={icons.home}
+                icon={images.logoSmall}
                 color={color}
                 name="Home"
+                focused={focused}
+              />
+            ),
+          }}
+        />
+        <Tabs.Screen
+          name="workout-tips"
+          options={{
+            title: "Tips",
+            headerShown: false,
+            tabBarIcon: ({ color, focused }) => (
+              <TabIcon
+                icon={icons.flex}
+                color={color}
+                name="Tips"
                 focused={focused}
               />
             ),
